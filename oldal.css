@@ -1,0 +1,344 @@
+/*letöltött kód hogy minden böngészőből azonos formában nyíljon meg a weboldal*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*az én kódom*/
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#f3f3f3 ;
+}
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+
+}
+header .header{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  
+    
+
+
+}
+header nav ul{
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    
+    color: #111;
+}
+header nav ul li a:hover{
+    
+    
+    color:grey;
+}
+/*index*/
+.index-banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/fo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+
+
+}
+.index-banner h2{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 60px;
+    text-align: center;
+    font-weight:900 ;
+    line-height: 70px;
+    color:#fff;
+    text-shadow: 3px 3px 9px #111;
+}
+.index-banner h1{
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 28px;
+    text-align: center;
+    font-weight:100 ;
+    font-style: italic;
+    line-height: 40px;
+    color:#fff;
+    text-shadow: 2px 2px 8px #111;
+}
+/*aloldal*/
+/*projekt*/
+.projektek h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+.projektek article h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+   padding-bottom: 20px;
+    text-transform: uppercase;
+    margin: 30px;
+
+
+}
+.projektek article div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 30px;
+    
+
+
+}
+.projektek article div img{
+    width: 60%;
+    height: 600px;
+
+    margin:  0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+.rajz{
+    width: 40%;
+    height: 400px;
+
+    margin:  0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+/*rólam*/
+.rolam h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    margin: 30px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+.rolam article div img{
+    margin:  30px;
+    
+    display: block;
+    width: 9%;
+    height: 200px;
+    float: left;
+
+}
+
+.rolam article div p{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    line-height: 24px;
+    column-count: 2;
+    padding-top: 25px;
+    column-gap: 30px;
+    font-style: italic;
+
+}
+/*hobbi*/
+.hobbik h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+.hobbik article h3{
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+   padding-bottom: 20px;
+    text-transform: uppercase;
+    
+
+}
+.hobbik article div img{
+    margin:  0 auto;
+    display: block;
+    width: 60%;
+    height: 500px;
+
+}
+.hobbik article div p{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    line-height: 24px;
+    font-style: italic;
+    column-count: 3;
+    column-gap: 30px;
+
+
+}
+
+/*footer*/
+footer{
+    
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    
+    background-color: #111;
+    overflow: hidden;
+
+}
+.index-elerhetoseg{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    
+    color:#fff;
+    
+}
